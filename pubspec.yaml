@@ -1,0 +1,67 @@
+name: promowave
+description: "A Flutter application for promotional campaigns and weather tracking."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP client for API calls
+  http: ^1.1.0
+  
+  # State management
+  provider: ^6.0.0
+  
+  # Local storage
+  shared_preferences: ^2.2.0
+  
+  # Date/time formatting
+  intl: ^0.19.0
+  
+  # Networking
+  dio: ^5.3.0
+  
+  # JSON serialization
+  json_serializable: ^6.7.0
+  
+  # Geolocation
+  geolocator: ^9.0.2
+  location: ^5.0.1
+  
+  # Image caching
+  cached_network_image: ^3.3.0
+  
+  # Notifications
+  flutter_local_notifications: ^14.1.0
+  
+  # Error handling
+  connectivity_plus: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.0
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
